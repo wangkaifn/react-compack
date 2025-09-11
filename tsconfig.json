@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "react-compack": ["src"],
+      "react-compack/*": ["src/*", "*"],
+      "@hooks/*": ["src/hooks/*"]
+    }
+  },
+  "include": [".dumirc.ts", "src/**/*"],
+  "exclude": ["src/**/demo/**", "src/**/*.md"]
+}
