@@ -1,4 +1,9 @@
-export { useTabActive } from './hooks';
+export { useCopyToClipboard, useTabActive } from './hooks';
 
 //types
-export type { UseTabActiveOptions, UseTabActiveReturn } from './hooks';
+export type {
+  UseCopyToClipboardOptions,
+  UseCopyToClipboardReturn,
+  UseTabActiveOptions,
+  UseTabActiveReturn,
+} from './hooks';

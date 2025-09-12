@@ -1,6 +1,6 @@
 ---
 title: useTabActive
-group:
+nav:
   title: Hooks
   order: 1
 order: 2
