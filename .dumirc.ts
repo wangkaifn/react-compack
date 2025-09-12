@@ -15,4 +15,7 @@ export default defineConfig({
   alias: {
     'react-compack': require.resolve('./src/index.ts'),
   },
+  // 部署到 GitHub Pages
+  base: '/react-compack/',
+  publicPath: '/react-compack/',
 });

@@ -8,11 +8,12 @@
     "components",
     "tools"
   ],
+  "homepage": "https://wangkaifn.github.io/react-compack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangkaifn/react-compack"
+  },
   "license": "MIT",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "unpkg": "dist/umd/index.js",
-  "types": "dist/esm/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
@@ -30,6 +31,10 @@
       "types": "./dist/esm/utils/index.d.ts"
     }
   },
+  "main": "dist/cjs/index.js",
+  "unpkg": "dist/umd/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "files": [
     "dist",
     "hooks.js",
@@ -40,6 +45,7 @@
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
+    "deploy": "gh-pages -d docs-dist",
     "dev": "dumi dev",
     "docs:build": "dumi build",
     "docs:preview": "dumi preview",
@@ -73,6 +79,10 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "dependencies": {
+    "antd": "^5.27.3",
+    "dayjs": "^1.11.18"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
@@ -82,6 +92,7 @@
     "dumi": "^2.4.13",
     "eslint": "^8.23.0",
     "father": "^4.1.0",
+    "gh-pages": "^6.3.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
@@ -100,9 +111,5 @@
   },
   "authors": [
     "kai150036@163.com"
-  ],
-  "dependencies": {
-    "antd": "^5.27.3",
-    "dayjs": "^1.11.18"
-  }
+  ]
 }
