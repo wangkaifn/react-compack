@@ -7,7 +7,7 @@ export default defineConfig({
     footer: 'Copyright © 2025 | Powered by 阿凯',
     logo: '/react.svg',
     socialLinks: {
-      github: '',
+      github: 'https://github.com/wangkaifn/react-compack',
     },
   },
   favicons: ['/react.svg'],
